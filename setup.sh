@@ -150,23 +150,20 @@ done
     sudo systemctl enable --now cups
     sudo pacman -S system-config-printer
     #sudo yay -S epson-inkjet-printer-escpr # MY PRINTER
+    #(vim /etc/locale.gen)
 
 ## Apps (COMMENT or UNCOMMENT to your liking)
 
     ## Office & Utils
     sudo pacman -S libreoffice-fresh vlc neofetch #ninja gnome-boxes gwenview kdeconnect spectacle
-
     ## Creative
     sudo pacman -S gimp darktable pitivi ardour inkscape audacity obs-studio #kdenlive
-    
     ## Games
     sudo yay -S game-devices-udev steam minecraft-launcher
-    
     ## Communication
     sudo yay -S discord telegram-desktop thunderbird #zoom
     flatpak install flathub com.microsoft.Teams
     flatpak install flathub us.zoom.Zoom
-
     ## Other (Add our own packages)
     sudo yay -S chrome-gnome-shell
     flatpak install flathub com.spotify.Client com.system76.Popsicle
