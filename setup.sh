@@ -19,23 +19,6 @@ cd
 sudo pacman -Syyu
 #sudo pacman -S packagekit-qt5 (Discover app store)
 
-# GRAPHICS DRIVERS -----------------
-while true; do
-    read -p "Install NVIDIA proprietary drivers? [y/n]" yn
-    case $yn in
-        [Yy]* )
-        # For Manjaro: (IF uncommented, comment the next command)
-            #sudo mhwd -a pci nonfree 0300
-        # For any Arch-based distro:
-            sudo pacman -S nvidia
-
-        break;;
-        [Nn]* ) break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
-cd
-
 # YAY AUR HELPER -------------------
 while true; do
     read -p "Install yay AUR helper? [y/n]" yn
@@ -81,14 +64,20 @@ cd
     # Basics
     sudo pacman -S chromium alacritty ranger pcmanfm-gtk3 gvim 
     # Office & Utils
-    sudo pacman -S libreoffice-fresh vlc neofetch mupdf scrot feh #ninja gnome-boxes gwenview kdeconnect spectacle
+    sudo pacman -S libreoffice-fresh vlc neofetch mupdf scrot feh rofi rofi-emoji libvirt #libqalculate alsa-utils ninja gnome-boxes gwenview kdeconnect spectacle 
     # Creative
     sudo pacman -S gimp darktable audacity obs-studio kdenlive #ardour inkscape
     # Games
-    sudo yay -S game-devices-udev steam minecraft-launcher
+    yay -S game-devices-udev steam minecraft-launcher
     # Communication
-    sudo yay -S discord thunderbird
+    sudo pacman -S discord thunderbird
     # Other (Add our own packages)
+
+# Laptops (COMMENT or UNCOMMENT to your liking)
+    # Power Management
+    yay -S auto-cpufreq tlp
+    # Screen
+    sudo pacman -S brightnessctl
 
 # GROUPS
     sudo usermod -a -G sys,network,scanner,power,libvirt,rfkill,users,video,storage,optical,lp,audio,root tavo
