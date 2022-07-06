@@ -79,11 +79,11 @@ cd
 
 # Apps (COMMENT or UNCOMMENT to your liking)
     # Basics
-    sudo pacman -S chromium alacritty ranger pcmanfm #gvim
+    sudo pacman -S chromium alacritty ranger pcmanfm-gtk3 gvim 
     # Office & Utils
     sudo pacman -S libreoffice-fresh vlc neofetch mupdf scrot feh #ninja gnome-boxes gwenview kdeconnect spectacle
     # Creative
-    sudo pacman -S gimp darktable ardour inkscape audacity obs-studio kdenlive
+    sudo pacman -S gimp darktable audacity obs-studio kdenlive #ardour inkscape
     # Games
     sudo yay -S game-devices-udev steam minecraft-launcher
     # Communication
