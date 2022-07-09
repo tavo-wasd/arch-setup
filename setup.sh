@@ -62,7 +62,7 @@ cd
 
 # Apps (COMMENT or UNCOMMENT to your liking)
     # Basics
-    sudo pacman -S chromium alacritty ranger pcmanfm-gtk3 gvim 
+    sudo pacman -S chromium alacritty ranger pcmanfm-gtk3 gvim gvfs #dhcpcd
     # Office & Utils
     sudo pacman -S libreoffice-fresh vlc neofetch mupdf scrot feh rofi rofi-emoji libvirt #libqalculate alsa-utils ninja gnome-boxes gwenview kdeconnect spectacle 
     # Creative
