@@ -52,7 +52,7 @@ cd
     # Emojis
     sudo pacman -S noto-fonts-emoji
     # Multimedia codecs
-    sudo pacman -S --needed jasper libdca libdv gst-libav wavpack dvd+rw-tools dvdauthor dvgrab libmad libmpeg2 libdvdcss libdvdread libdvdnav exfat-utils fuse-exfat a52dec faac faad2 jre-openjdk ntfs-3g git curl lame libtheora libvorbis libxv x264 xvidcore flac ffmpeg
+    sudo pacman -S --needed jasper libdca libdv gst-libav wavpack dvd+rw-tools dvdauthor dvgrab libmad libmpeg2 libdvdcss libdvdread libdvdnav exfatprogs fuse-exfat a52dec faac faad2 jre-openjdk ntfs-3g git curl lame libtheora libvorbis libxv x264 xvidcore flac ffmpeg
     # Printing support
     sudo pacman -S cups cups-pdf
     sudo systemctl enable --now cups
